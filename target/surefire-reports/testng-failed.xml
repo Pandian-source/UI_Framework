@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="helper.TestListeners"/>
+    <listener class-name="helper.AnnotationTransformer"/>
+    <listener class-name="helper.Reporter"/>
+  </listeners>
+  <test thread-count="5" name="Automation_Demo_Cases(failed)" verbose="0">
+    <classes>
+      <class name="execution.Runner">
+        <methods>
+          <include name="packageOnlyPrice"/>
+          <include name="searchButton"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="doneButton"/>
+        </methods>
+      </class> <!-- execution.Runner -->
+    </classes>
+  </test> <!-- Automation_Demo_Cases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

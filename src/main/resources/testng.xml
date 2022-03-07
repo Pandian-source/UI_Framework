@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="helper.TestListeners" />
+        <listener class-name="helper.AnnotationTransformer" />
+        <listener class-name="helper.Reporter"/>
+    </listeners>
+    <test name="Automation_Demo_Cases">
+        <classes>
+            <class name="execution.Runner">
+                <methods>
+                    <include name="openUrl" />
+                    <include name="loginTest"/>
+                    <include name="hotel"/>
+                    <include name="locationField"/>
+                    <include name="checkIn"/>
+                    <include name="doneButton"/>
+                    <include name="packageOnlyPrice"/>
+                    <include name="searchButton"/>
+                    <include name="filtercheck"/>
+<!--                    <include name="seeAvailableRoomsButton"/>-->
+<!--                    <include name="hotelNameLabel"/>-->
+<!--                    <include name="bookNowButton"/>-->
+<!--                    <include name="amountValue"/>-->
+<!--                    <include name="bookingInput"/>-->
+<!--                    <include name="tableAmount"/>-->
+<!--                    <include name="paymentModes"/>-->
+<!--                    <include name="confirmationPageValue"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

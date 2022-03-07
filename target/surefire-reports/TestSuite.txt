@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 165.71 s <<< FAILURE! - in TestSuite
+execution.Runner.doneButton  Time elapsed: 101.803 s  <<< FAILURE!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'wintlt-ThinkPad-E14-Gen-2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-30-generic', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a445780162b67c3512c3721b0a72f74, clickElement {id=e8b0c63e-73df-4158-9a1e-670441e66183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.tq6TrZ}, goog:chromeOptions: {debuggerAddress: localhost:40199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40199/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (0a445780162b67c3512c3721b0a72f74)] -> xpath: //div[@class='mt-4 text-center']//span[@class='cursor done_btn'][normalize-space()='Done']]
+Session ID: 0a445780162b67c3512c3721b0a72f74
+	at execution.Runner.doneButton(Runner.java:108)
+
+execution.Runner.packageOnlyPrice  Time elapsed: 2.807 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <label class="custom-control-label" for="__BVID__485">...</label> is not clickable at point (290, 12). Other element would receive the click: <a href="/dashboard" class="navbar-brand pointer logo b2b-logo mr-md-5">...</a>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'wintlt-ThinkPad-E14-Gen-2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-30-generic', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a445780162b67c3512c3721b0a72f74, clickElement {id=a4a8c900-7325-42a7-a5b2-fe01ab6d8721}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.tq6TrZ}, goog:chromeOptions: {debuggerAddress: localhost:40199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40199/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (0a445780162b67c3512c3721b0a72f74)] -> xpath: //label[contains(.,'Include Package Price')]]
+Session ID: 0a445780162b67c3512c3721b0a72f74
+	at execution.Runner.packageOnlyPrice(Runner.java:110)
+
+execution.Runner.searchButton  Time elapsed: 2.818 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="btn btn-primary search_btn">...</button> is not clickable at point (1715, 20). Other element would receive the click: <button aria-haspopup="true" aria-expanded="false" type="button" class="btn dropdown-toggle btn-secondary" id="__BVID__334__BV_toggle_">...</button>
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'wintlt-ThinkPad-E14-Gen-2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-30-generic', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a445780162b67c3512c3721b0a72f74, clickElement {id=c011177d-5666-4347-95c6-f72d7a670d62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /tmp/.com.google.Chrome.tq6TrZ}, goog:chromeOptions: {debuggerAddress: localhost:40199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:40199/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (0a445780162b67c3512c3721b0a72f74)] -> xpath: (//button[contains(.,'Search')])[2]]
+Session ID: 0a445780162b67c3512c3721b0a72f74
+	at execution.Runner.searchButton(Runner.java:113)
+
